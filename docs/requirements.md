@@ -1,16 +1,6 @@
 # requirements
 
-Requirements of imgctl. Functional requirements are written as decision tables; the rest in EARS. They come from the [use cases](diagrams/use-cases.puml).
-
-## triggers
-
-- **Show image** — the AI agent requests to show an image.
-
-## responses
-
-- **Open image** — imgctl opens the image in the image viewer.
-- **Replace image** — imgctl replaces the open image with the requested image.
-- **Report error** — imgctl reports an error to the AI agent.
+What imgctl must do, and how well.
 
 ## functional
 
@@ -28,6 +18,16 @@ As a terminal AI agent, I want to show images to the user, so that they don't ha
 
 `–` means the condition does not matter for that requirement.
 
+## triggers
+
+- **Show image** — the AI agent requests to show an image.
+
+## responses
+
+- **Open image** — imgctl opens the image in the image viewer.
+- **Replace image** — imgctl replaces the open image with the requested image.
+- **Report error** — imgctl reports an error to the AI agent.
+
 ## quality attributes
 
 - **QA-1** — WHEN the AI agent requests to show an image, imgctl SHALL open the image in the image viewer within 1 second.
@@ -37,6 +37,3 @@ As a terminal AI agent, I want to show images to the user, so that they don't ha
 - **C-1** — imgctl SHALL run on Linux.
 - **C-2** — imgctl SHALL be compatible with Okular as the image viewer.
 - **C-3** — imgctl SHALL delegate image rendering to an external image viewer program.
-
-## related artifacts
-- 

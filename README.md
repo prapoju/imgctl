@@ -1,6 +1,6 @@
 # imgctl
 
-[use cases](#use-cases) · [system context](#system-context) · [prerequisites](#prerequisites) · [install](#install) · [project structure](#project-structure) · [docs](#docs) · [development](#development)
+[use cases](#use-cases) · [system context](#system-context) · [prerequisites](#prerequisites) · [install](#install) · [project structure](#project-structure) · [development](#development)
 
 Lets your terminal AI agent show you images in your image viewer.
 
@@ -34,25 +34,16 @@ imgctl
 
 ## project structure
 
-```
-imgctl/
-├── imgctl.sh            # the script
-└── docs/
-    ├── requirements.md  # what imgctl must do
-    ├── vocabulary.md    # names and their meaning in the project
-    ├── decisions/       # architecture decision records
-    ├── diagrams/        # PlantUML sources and their images
-    └── logs/            # learning, regrets and progress
-```
+- [imgctl.sh](imgctl.sh) — the script
+- [docs/](docs/) — documentation
 
-## docs
+### docs
 
-everything lives in [docs/](docs/): [requirements](docs/requirements.md) · [decisions](docs/decisions/)
-
-decisions:
-
-- [ADR-001: Programming Language](docs/decisions/ADR-001-programming-language.md)
-- [ADR-002: No MCP](docs/decisions/ADR-002-no-mcp.md)
+- [requirements.md](docs/requirements.md) — what imgctl must do, and how well
+- [vocabulary.md](docs/vocabulary.md) — names and their meaning in the project
+- [decisions/](docs/decisions/) — architecture decision records, one file per decision
+- [diagrams/](docs/diagrams/) — PlantUML sources (`.puml`) next to their images (`.png`)
+- [logs/](docs/logs/) — learning, regrets and progress
 
 ## development
 
