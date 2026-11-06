@@ -14,8 +14,7 @@ Lets your terminal AI agent show you images in your image viewer.
 
 ## prerequisites
 
-- [what must be installed first, and the minimum version]
-- [what must be installed first, and the minimum version]
+- Okular, installed in the system
 
 ## install
 
