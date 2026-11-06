@@ -28,9 +28,9 @@ As a terminal AI agent, I want to show images to the user, so that they don't ha
 
 `–` means the condition does not matter for that requirement.
 
-## non-functional
+## quality attributes
 
-- **NFR-1** — WHEN the AI agent requests to show an image, imgctl SHALL open the image in the image viewer within 1 second.
+- **QA-1** — WHEN the AI agent requests to show an image, imgctl SHALL open the image in the image viewer within 1 second.
 
 ## constraints
 
@@ -38,5 +38,5 @@ As a terminal AI agent, I want to show images to the user, so that they don't ha
 - **C-2** — imgctl SHALL be compatible with Okular as the image viewer.
 - **C-3** — imgctl SHALL delegate image rendering to an external image viewer program.
 
-## Related artifacts
+## related artifacts
 - 

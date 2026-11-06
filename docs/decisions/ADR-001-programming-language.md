@@ -3,33 +3,33 @@
 **Status:** proposed
 **Date:** 2026-11-03
 
-## Context
+## context
 
 imgctl needs a programming language. Constraint C-1 says that imgctl SHALL run on Linux.
 
-## Context attachments
+## context attachments
 
-## Alternatives
+## alternatives
 
 - Python: discarded because it's more complex than Bash for imgctl.
 
-## Decision
+## decision
 
 imgctl is written in Bash.
 
-## Consequences
+## consequences
 
 - (+) imgctl is simpler to write than it would be in Python.
 - (-) imgctl might lose some capabilities that Python offers, but it doesn't need them.
 
-## Rationale
+## rationale
 
 Bash fits constraint C-1, and it's simpler than Python. The capabilities that Python would add aren't needed.
 
-## Confidence level
+## confidence level
 
-## References
+## references
 
-## Related artifacts
+## related artifacts
 
 - [requirements](../requirements.md): C-1

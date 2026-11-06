@@ -1,6 +1,5 @@
 # vocabulary
 
-Names and their meaning in the project. Use them exactly as written.
 
 | Name         | Kind            | Meaning                                                                 |
 | ------------ | --------------- | ----------------------------------------------------------------------- |
