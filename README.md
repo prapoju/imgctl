@@ -2,9 +2,7 @@
 
 [use cases](#use-cases) · [system context](#system-context) · [prerequisites](#prerequisites) · [install](#install) · [project structure](#project-structure) · [docs](#docs) · [development](#development)
 
-[what imgctl is, in one short line.]
-
-- **Show image** — your terminal AI agent shows you an image in the image viewer, so you don't have to open it manually. If the viewer already has an image open, imgctl reuses that window.
+Lets your terminal AI agent show you images in your image viewer.
 
 ## use cases
 
