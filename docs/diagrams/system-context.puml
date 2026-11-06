@@ -1,6 +1,8 @@
 @startuml system-context
 !include <C4/C4_Context>
 
+LAYOUT_LEFT_RIGHT()
+
 title System Context diagram for imgctl
 
 Person(user, "User", "Works in the terminal with an AI agent")
