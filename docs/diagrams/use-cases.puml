@@ -1,0 +1,23 @@
+@startuml use-cases
+skinparam packageStyle rectangle
+
+title imgctl use cases
+
+actor "User" as user
+actor "AI agent" as agent
+
+rectangle "Image viewer" {
+  usecase "Open image" as open_image
+  usecase "Render image" as render_image
+}
+
+rectangle "imgctl" {
+  usecase "Show image" as show_image
+}
+
+user - open_image
+show_image -left- agent
+open_image <.. show_image : <<include>>
+open_image .> render_image : <<include>>
+
+@enduml
