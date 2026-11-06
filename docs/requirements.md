@@ -37,3 +37,4 @@ As a terminal AI agent, I want to show images to the user, so that they don't ha
 - **C-1** — imgctl SHALL run on Linux.
 - **C-2** — imgctl SHALL be compatible with Okular as the image viewer.
 - **C-3** — imgctl SHALL delegate image rendering to an external image viewer program.
+- **C-4** — WHEN imgctl finishes a task, the imgctl process SHALL terminate.

@@ -26,10 +26,6 @@ imgctl is written in Bash.
 
 Bash fits constraint C-1, and it's simpler than Python. The capabilities that Python would add aren't needed.
 
-## confidence level
-
-## references
-
 ## related artifacts
 
 - [requirements](../requirements.md): C-1

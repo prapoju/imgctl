@@ -26,10 +26,6 @@ imgctl doesn't use MCP. Instead, imgctl is a Bash program that the AI agent runs
 
 The requirements are really simple, so MCP would be over-engineering. A simpler approach solves the same problem.
 
-## confidence level
-
-## references
-
 ## related artifacts
 
 - [requirements](../requirements.md)
