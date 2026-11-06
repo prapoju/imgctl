@@ -1,0 +1,17 @@
+@startuml system-context
+!include <C4/C4_Context>
+
+title System Context diagram for imgctl
+
+Person(user, "User", "Works in the terminal with an AI agent")
+System_Ext(agent, "AI agent", "Terminal AI agent, such as Claude Code.")
+System(imgctl, "imgctl", "Shows images to the user when the AI agent asks for it.")
+System_Ext(viewer, "Image viewer", "Renders the images, such as Okular.")
+
+Rel(user, agent, "Asks for work that involves images")
+Rel(agent, imgctl, "Requests to show an image")
+Rel(imgctl, viewer, "Opens or replaces the image")
+Rel(viewer, user, "Shows the image")
+
+SHOW_LEGEND()
+@enduml

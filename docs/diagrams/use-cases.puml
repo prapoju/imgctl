@@ -8,7 +8,7 @@ actor "AI agent" as agent
 
 rectangle "Image viewer" {
   usecase "Open image" as open_image
-  usecase "Render image" as render_image
+  usecase "Render image in the same window" as render_image
 }
 
 rectangle "imgctl" {

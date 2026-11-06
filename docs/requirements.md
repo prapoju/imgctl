@@ -1,13 +1,32 @@
 # requirements
 
-Requirements of imgctl, written in EARS. They come from the [use cases](diagrams/use-cases.puml).
+Requirements of imgctl. Functional requirements are written as decision tables; the rest in EARS. They come from the [use cases](diagrams/use-cases.puml).
+
+## triggers
+
+- **Show image** — the AI agent requests to show an image.
+
+## responses
+
+- **Open image** — imgctl opens the image in the image viewer.
+- **Replace image** — imgctl replaces the open image with the requested image.
+- **Report error** — imgctl reports an error to the AI agent.
 
 ## functional
 
-- **FR-1** — WHEN the AI agent requests to show an image, imgctl SHALL open the image in the image viewer.
-- **FR-2** — IF the requested image file does not exist, THEN imgctl SHALL report an error to the AI agent.
-- **FR-3** — IF the requested file is not an image that the image viewer can render, THEN imgctl SHALL report an error to the AI agent.
-- **FR-4** — IF the image viewer cannot be opened, THEN imgctl SHALL report an error to the AI agent.
+### FE-1 — Show image
+
+As a terminal AI agent, I want to show images to the user, so that they don't have to open them manually.
+
+| ID   | Trigger    | File exists | Viewer can render it | Viewer can be opened | Viewer has an image open | Response      |
+| ---- | ---------- | ----------- | -------------------- | -------------------- | ------------------------ | ------------- |
+| FR-1 | Show image | Y           | Y                    | Y                    | N                        | Open image    |
+| FR-2 | Show image | Y           | Y                    | Y                    | Y                        | Replace image |
+| FR-3 | Show image | N           | –                    | –                    | –                        | Report error  |
+| FR-4 | Show image | Y           | N                    | –                    | –                        | Report error  |
+| FR-5 | Show image | Y           | Y                    | N                    | –                        | Report error  |
+
+`–` means the condition does not matter for that requirement.
 
 ## non-functional
 
@@ -17,3 +36,7 @@ Requirements of imgctl, written in EARS. They come from the [use cases](diagrams
 
 - **C-1** — imgctl SHALL run on Linux.
 - **C-2** — imgctl SHALL be compatible with Okular as the image viewer.
+- **C-3** — imgctl SHALL delegate image rendering to an external image viewer program.
+
+## Related artifacts
+- 
