@@ -1,6 +1,6 @@
 # imgctl
 
-[use cases](#use-cases) · [prerequisites](#prerequisites) · [install](#install) · [docs](#docs) · [development](#development)
+[use cases](#use-cases) · [prerequisites](#prerequisites) · [install](#install) · [project structure](#project-structure) · [docs](#docs) · [development](#development)
 
 [what imgctl is, in one short line.]
 
@@ -33,6 +33,19 @@ imgctl
 ```
 
 [what to do first, and how to stop.]
+
+## project structure
+
+```
+imgctl/
+├── imgctl.sh            # the script
+└── docs/
+    ├── requirements.md  # what imgctl must do
+    ├── vocabulary.md    # names and their meaning in the project
+    ├── decisions/       # architecture decision records
+    ├── diagrams/        # PlantUML sources and their images
+    └── logs/            # learning, regrets and progress
+```
 
 ## docs
 

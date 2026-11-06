@@ -1,6 +1,6 @@
 # vocabulary
 
-Names used in the architecture diagrams. Use them exactly as written.
+Names and their meaning in the project. Use them exactly as written.
 
 | Name         | Kind            | Meaning                                                                 |
 | ------------ | --------------- | ----------------------------------------------------------------------- |
